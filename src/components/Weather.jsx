@@ -60,6 +60,8 @@ const Weather = () => {
       setError("City not found or failed to fetch weather data.");
       setWeather(null);
       setLoading(false);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -82,53 +84,6 @@ const Weather = () => {
       />
       <button onClick={fetchWeather}>Get Weather</button>
 
-      {error && <p>{error}</p>}
-
-      {/* {weather && (
-        <div className="weatherBox">
-          <table>
-            <thead>
-              <tr>
-                <th>Description</th>
-                <th>Value</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Place</td>
-                <td>
-                  {weather.name}, {weather.sys.country}
-                </td>
-              </tr>
-              <tr>
-                <td>Humidity</td>
-                <td>{weather.main.humidity} %</td>
-              </tr>
-              <tr>
-                <td>Temprature</td>
-                <td>{weather.main.temp}°C</td>
-              </tr>
-              <tr>
-                <td>Wind Speed</td>
-                <td>{weather.wind.speed} m/s</td>
-              </tr>
-              <tr>
-                <td>Weather description</td>
-                <td>{weather.weather[0].description}</td>
-              </tr>
-              <tr>
-                <td>Weather Condition</td>
-                <td>
-                  <img
-                    src={getWeatherIconUrl(weather.weather[0].icon)}
-                    alt="weatherImage"
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      )} */}
       {weather ? (
         <div className="weatherBox">
           <table>
@@ -173,6 +128,8 @@ const Weather = () => {
             </tbody>
           </table>
         </div>
+      ) : error ? (
+        <p>{error}</p>
       ) : (
         <Loading />
       )}
