@@ -112,11 +112,3 @@ Contributions are welcome! To contribute:
    git push origin feature-name
    ```
 4. Open a pull request.
-
-## License 📜
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-You can add deployment details once the app is hosted. Let me know if you'd like any adjustments or additional sections! 😊
