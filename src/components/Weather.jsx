@@ -59,6 +59,7 @@ const Weather = () => {
     } catch (err) {
       setError("City not found or failed to fetch weather data.");
       setWeather(null);
+      setLoading(false);
     }
   };
 
