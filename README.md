@@ -16,6 +16,10 @@ A simple and responsive weather application that provides current weather inform
 - **Error Handling**: Shows appropriate error messages for invalid city searches or geolocation failures.
 - **Responsive Design**: Optimized for all screen sizes.
 
+## Live Demo 🌐
+
+Check out the live application here: [Weather Application on Netlify](https://seasondemo.netlify.app/)
+
 ## Getting Started 🚀
 
 ### Prerequisites
@@ -93,7 +97,6 @@ weather-app/
 
 ## To-Do List 📝
 
-- Add deployment (e.g., on Netlify, Vercel, or GitHub Pages)
 - Add unit tests for components
 - Improve styling and animations
 - Allow users to toggle temperature units (Celsius/Fahrenheit)
