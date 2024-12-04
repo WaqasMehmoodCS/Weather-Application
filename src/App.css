@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgba(165, 42, 42, 0.685);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.weather-container {
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 85%;
+  margin: auto;
+  background-color: rgb(233, 233, 207);
+  box-shadow: 5px 10px 10px 5px brown;
+}
+.title {
+  text-transform: uppercase;
+  color: blue;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.cityInput {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: blue;
+  font-size: 16px;
+}
+button {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.weatherBox {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px 3px rgb(221, 221, 236);
+}
+img {
+  filter: drop-shadow(5px 5px 5px rgb(37, 37, 61));
+}
+table {
+  border-collapse: collapse;
+  font-size: 14px;
+  text-transform: capitalize;
+  vertical-align: middle; /* Ensures text is vertically centered */
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+  vertical-align: middle; /* Ensures text is vertically centered */
+}
+th {
+  text-align: center;
+}
+
+tr:last-child {
+  border-bottom: none; /* Optional: remove the bottom border on the last row */
+}
+.loading {
+  background-color: #030303d3;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+}
