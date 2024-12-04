@@ -76,8 +76,7 @@ Check out the live application here: [Weather Application on Netlify](https://se
 ```
 weather-app/
 ├── public/
-│   ├── vite.svg         # Default favicon
-│   └── [your-new-favicon.svg] # Replace with your custom favicon
+│ └── favicon.ico
 ├── src/
 │   ├── components/
 │   │   ├── Weather.jsx  # Main weather component
